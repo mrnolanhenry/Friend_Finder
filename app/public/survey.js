@@ -2,8 +2,6 @@ $(document).ready(function () {
 
     let questions = ["You enjoy going outside over staying in.", "You prefer dogs to cats.", "You gain energy from social engagements.", "It's more important to enjoy life than achieve one's aspirations.", "You prefer to cook a meal with your partner rather than go out to eat together.", "It is better to embrace your partner's strengths and weaknesses rather than push them to change.", "You stick with a few long-term close friends rather than make a lot of new friends.", "It's easy to look past someone's physical appearance if they have a lot of other great qualities.", "Your partner has to share similar points of view when it comes to politics.", "It's better to speak one's mind immediately rather than bottle it up, even if it may hurt someone's feelings."];
 
-    // let questions = ["You enjoy going outside over staying in.", "You prefer dogs to cats."];
-
     displayEachQuestion();
 
     function displayEachQuestion() {
@@ -26,14 +24,12 @@ $(document).ready(function () {
         let dropdownDiv = $("<div>");
         dropdownDiv.attr("title", "");
         dropdownDiv.attr("id", "q" + questionNum + "_dropdown");
-        let span = $("<span>");
-        span.text("Select an Option ");
-        dropdownDiv.append(span);
         let select = $("<select>");
         select.attr("class", "selection");
         select.attr("id", "q" + questionNum);
         let option0 = $("<option>");
         option0.attr("value", "");
+        option0.text("Select an option")
         select.append(option0);
         for (let i = 1; i < 6; i++) {
             let option = $("<option>");
