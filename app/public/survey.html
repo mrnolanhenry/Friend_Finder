@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center"><span class="fa fa-facebook-square"></span> Friend Finder <span class="text-right">
+                <a href="/">
+                    <button class="btn btn-lg btn-default">
+                        <span class="fa fa-home"></span>
+                    </button>
+                </a>
+            </span></h1>
+        <hr>
+
+        <h2>Survey Questions</h2>
+        <hr>
+
+        <h3><b>About You</b></h3>
+        <span>
+            <h4 style="display:inline;">Name </h4>
+            <h6 style="display:inline;">(Required)</h6>
+            <input type="text" id="name" class="form-control" required="">
+        </span>
+
+        <h4 style="display:inline;">Link to Photo </h4>
+        <h6 style="display:inline;">(Required)</h6>
+        <input type="text" id="photo" class="form-control" required="">
+        <hr>
+
+        <div id="questionsDiv"></div>
+
+        <button type="submit" class="btn btn-block btn-primary btn-lg" id="submit">Submit</button>
+        <hr>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends" target="_blank">API Friends List</a> |
+                    <a href="https://github.com/enfenry/Friend_Finder" target="_blank">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+
+        <div id="results-div" class="modal fade" role="dialog">
+            <div class="modal-dialog text-center">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"><b>Best Match</b></h2>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="results-name"></h2>
+                        <img id="results-pic" src="https://via.placeholder.com/140x100" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="survey.js">
+    </script>
+</body>
+
+</html>

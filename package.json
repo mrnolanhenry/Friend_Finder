@@ -1,0 +1,23 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "Assignment using Node and Express Servers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enfenry/Friend_Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enfenry/Friend_Finder/issues"
+  },
+  "homepage": "https://github.com/enfenry/Friend_Finder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
